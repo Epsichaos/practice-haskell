@@ -158,3 +158,15 @@ repli k xs = concat (map (replicate k) xs)
 repli2 :: Int -> [a] -> [a]
 repli2 _ [] = []
 repli2 k (x:xs) = [x | y<-[1,k]] ++ repli2 k xs
+
+-- Problem 16: (**) Drop every N'th element from a list.
+-- dropEveryN :: Int -> [a] -> [a]
+-- dropEveryN k xs = take (k-1) xs ++ dropEveryN k (drop k xs)
+
+-- Problem 17: (*) Split a list into two parts; the length of the first part is given.
+
+-- Problem 18: (**) Extract a slice from a list.
+
+-- Problem 19: (**) Rotate a list N places to the left.
+
+-- Problem 20: (*) Remove the K'th element from a list.
